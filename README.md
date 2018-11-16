@@ -2,7 +2,9 @@
 
 ## Agenda
 
-- Day 1 (4hs)
+### Day 1 : 14 / 01 /2019
+
+#### 10AM - 12PM
 
   - [Git](https://git-scm.com/): "global information tracker" ('cause you're in a good mood)
   - [Gitlab](https://about.gitlab.com/)
@@ -11,11 +13,16 @@
   - How to install and update Python with [Anaconda/Miniconda](https://www.anaconda.com/)
   - Managing environments with [conda](https://conda.io/)
   
+Lunch Break
+
+#### 2PM - 4PM
+  
   - Variable types in Python: why do we need additional modules? 
   - Numpy, Scipy, Pandas
   - From scripting to modular coding , with examples
   
-- Day 2 (3h + 3h)
+### Day 2 : 18 / 01 / 2019
+
   - Collaborative coding on a proposed use case
 
   - Personal use case?

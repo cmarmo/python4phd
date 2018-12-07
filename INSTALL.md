@@ -12,7 +12,7 @@ NOTA BENE 2: Once VSCode install I strongly recommend to switch off telemetry, [
 
 ## On Windows
 
-- [Git bash](https://gitforwindows.org/)
+- [Git bash](https://gitforwindows.org/), please, disable Windows credentials
 - [Note pad++](https://notepad-plus-plus.org/)
 - [Anaconda](https://www.anaconda.com/download/) version for Python 3.x
 

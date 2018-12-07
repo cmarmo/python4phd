@@ -28,7 +28,7 @@
                                     <h2>Data Workflow with python and git</h2>
                                     <h4>14/01/2018</h4>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="git">
                                     <h3>GIT</h3>
                                     <ul>
                                     <li>A version-control system for tracking changes in computer files
@@ -39,7 +39,7 @@
                                     <li>Open Source (under GNU GPL v2 and GNU LGPL v2.1)</li>
                                     </ul>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="whygit">
                                     <h3>Why GIT</h3>
                                     <ul>
                                     <li>Which version did the results come from?</li>
@@ -54,7 +54,7 @@
                                     <a href="https://gitlab.u-psud.fr/chiara.marmo/python4phd/wikis/FAIR-Data-Workflows">data analysis workflows</a>.
                                     </span>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="gitwf">
                                     <h3>GIT Workflow</h3>
 <pre class="bash"><code>
 $ mkdir my-amazing-project
@@ -118,9 +118,9 @@ On branch master
 nothing to commit, working tree clean
 $
 </code></pre>
-                                  <a href="https://learngitbranching.js.org/?NODEMO">learning git branching</a>
+                                  <a href="https://learngitbranching.js.org/?NODEMO" target="_blank">learning git branching</a>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="gitrepo">
                                     <h3>GIT remote repositories managers</h3>
                                       <ul>
                                         <li>
@@ -141,13 +141,13 @@ $
                                       </ul>
                                 <br />
                                 <span class="fragment">
-                                <a href="https://gitlab.u-psud.fr">Paris Sud GitLab portal</a>
+                                <a href="https://gitlab.u-psud.fr" target="_blank">Paris Sud GitLab portal</a>
                                 <br />
-                                <a href="https://gitlab.in2p3.fr">CCIN2P3 GitLab portal</a>
+                                <a href="https://gitlab.in2p3.fr" target="_blank">CCIN2P3 GitLab portal</a>
                                 </span>
                                 </section>
                                 <section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="python">
                                     <h3>Python is...</h3>
                                     <li class="fragment">A programming language
                                         <span style="color:green;">TRUE</span>
@@ -170,15 +170,15 @@ $
                                         <span style="color:green;">TRUE</span>
                                     </li>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="pylang">
                                     <h3>Python is...</h3>
-                                    A programming language written in C
+                                    An Open Source programming language written in C
                                     <br />
-                                    <a href="https://www.python.org">Home page</a>
+                                    <a href="https://www.python.org" target="_blank">Home page</a>
                                     <br />
-                                    <a href="https://github.com/python">Source code</a>
+                                    <a href="https://github.com/python" target="_blank">Source code</a>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="intcomp">
                                     <h4>interpreted vs. compiled languages</h4>
                                     <table>
                                         <tr><th>Interpreted languages, must be parsed, interpreted,
@@ -193,8 +193,9 @@ $
                                         <tr><td>Javascript</td><td>OCaml</td></tr>
                                         <tr><td style="color:red;">high-level</td><td style="color:red;">low-level</td></tr>
                                     </table>
+                                        <span class="fragment"><a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">Just-in-time compilation</a> (e.g. <a href="https://julialang.org/">Julia</a>)</span>
                                 </section>
-				<section data-transition="fade">
+				<section data-transition="fade" id="ooproc">
                                     <h4>object-oriented vs. procedural languages</h4>
                                     <img src="images/proc-oo.svg" style="width:60%;float:left">
                                     <table>
@@ -214,13 +215,96 @@ a.times(b)</code></pre></td></tr>
                                     
                                 </section>
                                 </section>
-				<section  data-transition="fade">
+                                <section>
+				<section  data-transition="fade" id="pyinst">
                                     <h4>Python: how to install it</h4>
                                      <ul>
                                        <li>from source,</li>
-                                       <li>from binary (linux, Mac, Windows): package manager is pip,</li>
+                                       <li>from binary (linux, Mac, Windows): package manager pip and easy-install,</li>
                                        <li>from commercial Open Source python distributions (e.g. <a href="https://www.anaconda.com/">anaconda</a> or <a src="https://www.enthought.com">enthought</a>.</li>
                                      </ul>
+                                     <span class="fragment">We will stick to Anaconda distribution
+                                     <ul>
+                                       <li>available for Windows, Mac and Linux</li>
+                                       <li>support of a large number of Python modules</li>
+                                       <li>can manage different dev environment (means dependencies) without root privileges</li>
+                                     </ul>
+                                     </span>
+                                </section>
+				<section  data-transition="fade" id="condaTP">
+                                    <h4>Python with Anaconda</h4>
+<pre class="bash"><code>
+$ (base) C:\Users\cmarmo> conda --version
+conda 4.5.11
+
+$ (base) C:\Users\cmarmo> conda update conda
+</code></pre>
+                                <small>Need root / administrator privileges</small>
+<pre class="bash"><code>
+$ (base) C:\Users\cmarmo> python --version
+Python 3.6.3 :: Anaconda custom (64-bit)
+
+$ (base) C:\Users\cmarmo> conda create --name python2 python=2.7
+Solving environment: done
+
+....
+
+Proceed ([y]/n)?
+
+....
+
+# To activate this environment, use
+#      $ conda activate python2
+#
+# To desactivate an active environment, use
+#      $ conda deactivate
+
+$ (base) C:\Users\cmarmo> conda activate python2
+$ (python2) C:\Users\cmarmo> python --version
+Python 2.7.15 :: Anaconda, Inc.
+</code></pre>
+<small>some commands are OS dependent check the <a href="https://conda.io/docs/user-guide/getting-started.html#" target="_blank">documentation</a></small>
+                                </section>
+				<section  data-transition="fade" id="reqtxt">
+                                    <h4>Requirements.txt</h4>
+<pre class="text"><code>
+#
+####### example-requirements.txt #######
+#
+###### Requirements without Version Specifiers ######
+nose
+nose-cov
+beautifulsoup4
+#
+###### Requirements with Version Specifiers ######
+#   See https://www.python.org/dev/peps/pep-0440/#version-specifiers
+docopt == 0.6.1             # Version Matching. Must be version 0.6.1
+keyring >= 4.1.1            # Minimum version 4.1.1
+coverage != 3.5             # Version Exclusion. Anything except version 3.5
+Mopidy-Dirble ~= 1.1        # Compatible release. Same as >= 1.1, == 1.*
+#
+###### Refer to other requirements files ######
+-r other-requirements.txt
+#
+#
+###### A particular file ######
+./downloads/numpy-1.9.2-cp34-none-win32.whl
+http://wxpython.org/Phoenix/snapshot-builds/wxPython_Phoenix-3.0.3.dev1820+49a8884-cp34-none-win_amd64.whl
+#
+###### Additional Requirements without Version Specifiers ######
+#   Same as 1st section, just here to show that you can put things in any order.
+rejected
+green
+#
+</code></pre>
+<small>from <a href="https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format" target="_blank">pip documentation</a></small>
+<br />
+<small>with pip</small>
+<pre class="bash"><code>pip install -r requirements.txt</code></pre>
+<table><tr><td><small>with conda</small></td><td><small>and</small></td></tr>
+<tr><td><pre class="bash"><code>conda create -n newenv --file requirements.txt</code></pre></td>
+<td><pre class="bash"><code>conda list -e > requirements.txt</code></pre></td></tr></table>
+                                </section>
                                 </section>
 				<section  data-transition="fade">
                                     <h4>Python: control-flow syntax</h4>

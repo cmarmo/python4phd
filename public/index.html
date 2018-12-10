@@ -141,9 +141,9 @@ $
                                       </ul>
                                 <br />
                                 <span class="fragment">
-                                <a href="https://gitlab.u-psud.fr" target="_blank">Paris Sud GitLab portal</a>
+                                <a href="https://gitlab.u-psud.fr" target="_blank">Paris Sud GitLab portal</a> for practice.
                                 <br />
-                                <a href="https://gitlab.in2p3.fr" target="_blank">CCIN2P3 GitLab portal</a>
+                                <a href="https://gitlab.in2p3.fr" target="_blank">CCIN2P3 GitLab portal</a> for French collaborations.
                                 </span>
                                 </section>
                                 <section>
@@ -220,10 +220,10 @@ a.times(b)</code></pre></td></tr>
                                     <h4>Python: how to install it</h4>
                                      <ul>
                                        <li>from source,</li>
-                                       <li>from binary (linux, Mac, Windows): package manager pip and easy-install,</li>
-                                       <li>from commercial Open Source python distributions (e.g. <a href="https://www.anaconda.com/">anaconda</a> or <a src="https://www.enthought.com">enthought</a>.</li>
+                                       <li>from binary (linux, Mac, Windows): distro package manager or pip and easy-install,</li>
+                                       <li>from commercial Open Source python distributions (e.g. <a href="https://www.anaconda.com/">anaconda</a> or <a src="https://www.enthought.com">enthought</a>).</li>
                                      </ul>
-                                     <span class="fragment">We will stick to Anaconda distribution
+                                     <span class="fragment">We stick to Anaconda distribution
                                      <ul>
                                        <li>available for Windows, Mac and Linux</li>
                                        <li>support of a large number of Python modules</li>
@@ -298,12 +298,39 @@ green
 #
 </code></pre>
 <small>from <a href="https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format" target="_blank">pip documentation</a></small>
-<br />
-<small>with pip</small>
+                                </section>
+				<section  data-transition="fade" id="reqtxt2">
+                                <h4>Requirements.txt . 2</h4>
+                                <small>with pip</small>
 <pre class="bash"><code>pip install -r requirements.txt</code></pre>
-<table><tr><td><small>with conda</small></td><td><small>and</small></td></tr>
-<tr><td><pre class="bash"><code>conda create -n newenv --file requirements.txt</code></pre></td>
-<td><pre class="bash"><code>conda list -e > requirements.txt</code></pre></td></tr></table>
+<small>with conda</small>
+<pre class="bash"><code>conda create -n newenv --file requirements.txt</code></pre>
+<small>to generate a requirements.txt</small>
+<pre class="bash"><code>conda list -e > requirements.txt</code></pre>
+<pre class="bash"><code>
+$ (base) C:\Users\cmarmo> conda create --name testenv --file requirements.txt
+Solving environment: done
+
+....
+
+Proceed ([y]/n)?
+
+....
+
+# To activate this environment, use
+#      $ conda activate testenv
+#
+# To desactivate an active environment, use
+#      $ conda deactivate
+
+$ (base) C:\Users\cmarmo> conda activate testenv
+$ (testenv) C:\Users\cmarmo> conda create -n newenv --file requirements.txt
+
+.....
+
+$ (testenv) C:\Users\cmarmo> conda list -e
+
+</code></pre>
                                 </section>
                                 </section>
 				<section  data-transition="fade">

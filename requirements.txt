@@ -1,6 +1,6 @@
 #
 ####### example-requirements.txt #######
-#
+# https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format
 ###### Requirements without Version Specifiers ######
 nose
 nose-cov

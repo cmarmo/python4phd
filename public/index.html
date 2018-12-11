@@ -302,13 +302,9 @@ green
 				<section  data-transition="fade" id="reqtxt2">
                                 <h4>Requirements.txt . 2</h4>
                                 <small>with pip</small>
-<pre class="bash"><code>pip install -r requirements.txt</code></pre>
+<pre class="bash"><code>$ pip install -r requirements4pip.txt</code></pre>
 <small>with conda</small>
-<pre class="bash"><code>conda create -n newenv --file requirements.txt</code></pre>
-<small>to generate a requirements.txt</small>
-<pre class="bash"><code>conda list -e > requirements.txt</code></pre>
-<pre class="bash"><code>
-$ (base) C:\Users\cmarmo> conda create --name testenv --file requirements.txt
+<pre class="bash"><code>$ conda create -n newenv --file requirements4conda.txt
 Solving environment: done
 
 ....
@@ -318,18 +314,14 @@ Proceed ([y]/n)?
 ....
 
 # To activate this environment, use
-#      $ conda activate testenv
+#      $ conda activate newenv
 #
 # To desactivate an active environment, use
 #      $ conda deactivate
-
-$ (base) C:\Users\cmarmo> conda activate testenv
-$ (testenv) C:\Users\cmarmo> conda create -n newenv --file requirements.txt
-
-.....
-
-$ (testenv) C:\Users\cmarmo> conda list -e
-
+$ conda activate newenv
+$ pip install -r pipinconda.txt</code></pre>
+<small>to generate a requirements.txt</small>
+<pre class="bash"><code>(newenv)$ conda list -e > req.txt</code></pre>
 </code></pre>
                                 </section>
                                 </section>

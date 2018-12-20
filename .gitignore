@@ -1,0 +1,5 @@
+# notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+# compiled scripts
+src/*.pyc
+

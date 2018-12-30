@@ -12,12 +12,13 @@
   - [Python](https://www.python.org/): Introduction
   - How to install and update Python with [Anaconda/Miniconda](https://www.anaconda.com/)
   - Managing environments with [conda](https://conda.io/)
+  - Variable types in Python: Jupyter notebooks
+  - Why do we need additional modules? 
   
 Lunch Break
 
 #### 2PM - 4PM
   
-  - Variable types in Python: why do we need additional modules? 
   - Numpy, Scipy, Pandas
   - From scripting to modular coding , with examples
   

@@ -7,7 +7,7 @@
 		<title>Git and Python and C.</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -211,7 +211,7 @@ var b
 a.times(b)</code></pre></td></tr>
                                     </table>
                                     <p>Python is a multi-paradigm programming language</p>
-                                    <p>Python3 object oriented has got stronger</p>
+                                    <p>Python3 object oriented model has got stronger</p>
                                     
                                     
                                 </section>
@@ -223,8 +223,8 @@ a.times(b)</code></pre></td></tr>
                                        <li>from source,</li>
                                        <li>from binary (linux, Mac, Windows): distro package manager or pip and easy-install,</li>
                                        <li>from commercial Open Source python distributions (e.g. <a href="https://www.anaconda.com/">anaconda</a> or <a src="https://www.enthought.com">enthought</a>).</li>
-                                     </ul>
-                                     <span class="fragment">We stick to Anaconda distribution
+                                     </ul></br></br>
+                                     <span class="fragment"><h5>We stick to Anaconda distribution</h5>
                                      <ul>
                                        <li>available for Windows, Mac and Linux</li>
                                        <li>support of a large number of Python modules</li>
@@ -339,24 +339,57 @@ $ pip install -r pipinconda.txt</code></pre>
                                    </section>
                                    <section id="varjnb">
                                       <h3>Jupyter notebooks examples</h3>
-                                        <ul><li>Variables</li>
-                                            <li>Looping</li>
-                                            <li>Control-Flow (Compound) statements</li></ul>
+                                        <ul><li>Variables (
+                                                <a href="http://localhost:8888/notebooks/sequences.ipynb" target="_blank">Sequences</a>,
+                                                <a href="http://localhost:8888/notebooks/sets.ipynb" target="_blank">Sets</a>,
+                                                <a href="http://localhost:8888/notebooks/maps.ipynb" target="_blank">Maps</a>
+                                            )</li>
+                                            <li><a href="http://localhost:8888/notebooks/looping.ipynb" target="_blank">Looping and Control-Flow (Compound) statements</a></li>
+                                            <li><a href="http://localhost:8888/notebooks/iofiles.ipynb" target="_blank">Input / Output files</a></li></ul>
 
                                       <br /><br /> 
 
-                                      <h3>Python problems for data analysis</h3>
-                                      <p>Implicit variable type
-                                                   <ul>
-                                                   <li>Lower performances</li>
-                                                   <li>Initialisation mistakes</li></ul>
-                                      <p>Lacking of math specific array type to optimise vectorization</p>
+                                      <span class="fragment"><h4>Lessons to learn</h4>
+                                      <ul>
+                                          <li>Implicit variable type
+                                              <ul>
+                                                  <li>Lower performances</li>
+                                                  <li>Initialisation mistakes</li>
+                                                  <li>No control on type guessing</li></ul>
+                                          <li>Lacking of math specific array type to optimise vectorization</li>
+                                          <li>Have you seen any plotting functions?</li>
+                                      </ul>
+                                      </span>
                                    </section>
                                 </section>
 				<section  data-transition="fade" id="modules">
-                                    <h4>Modules</h4>
-                                     Numpy, Scipy, Pandas (ex NaN managing)
+                                    <section data-transition="fade" id="matplotlib">
+                                        <h3>Modules: MatplotLib</h3>
+                                        https://www.anaconda.com/blog/developer-blog/python-data-visualization-2018-why-so-many-libraries/
+                                    </section>
+                                    <section data-transition="fade" id="numpy">
+                                        <h3>Modules: Numpy</h3>
+                                    </section>
+                                    <section data-transition="fade" id="scipy">
+                                        <h3>Modules: Scipy</h3>
+                                    </section>
+                                    <section data-transition="fade" id="pandas">
+                                        <h3>Modules: Pandas</h3>
+                                        Pandas (ex NaN managing)
 http://nbviewer.ipython.org/urls/gist.github.com/wesm/4757075/raw/a72d3450ad4924d0e74fb57c9f62d1d895ea4574/PandasTour.ipynb
+                                    </section>
+                                    <section data-transition="fade" id="advanced">
+                                        <h3>Modules</h3>
+                                         <ul>
+                                           <li>Scikit-learn</li>
+                                           <li>Scikit-image and OpenCV bindings</li>
+                                           <li>Rasterio and GDAL bindings</li>
+                                           <li>Astropy</li>
+                                           <li>GeoPandas</li>
+                                           <li>pyleoclim</li>
+                                           <li>...</li>
+                                         </ul>
+                                    </section>
                                 </section>
 			</div>
 		</div>

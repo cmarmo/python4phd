@@ -1,5 +1,5 @@
 ## my first object-oriented modular python script
-from number import *
+from number import Number
 
 ## The main
 def main():

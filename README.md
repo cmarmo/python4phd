@@ -19,7 +19,7 @@ Lunch Break
 
 #### 2PM - 4PM
   
-  - Numpy, Scipy, Pandas
+  - Numpy, Scipy, Matplotlib, Pandas
   - From scripting to modular coding , with examples
   
 ### Day 2 : 18 / 01 / 2019

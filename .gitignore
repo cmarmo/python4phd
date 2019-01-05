@@ -6,4 +6,5 @@ notebooks/data/*test*
 
 # compiled scripts
 src/*.pyc
+src/*/*.pyc
 

@@ -8,12 +8,12 @@ class Number:
 
         self.num = num
 
-    def __square__(self):
+    def square(self):
 
         n = self.num
         return n * n
 
-    def __cube__(self):
+    def cube(self):
 
         n = self.num
         return n*n*n
@@ -22,8 +22,8 @@ class Number:
 def main():
     num = int(input("Please enter a number\n"))
     myNumber = Number(num)
-    print(myNumber.__square__())
-    print(myNumber.__cube__())
+    print(myNumber.square())
+    print(myNumber.cube())
 
 if __name__ == "__main__":
     main()

@@ -8,12 +8,12 @@ class Number:
 
         self.num = num
 
-    def __square__(self):
+    def square(self):
 
         n = self.num
         return n * n
 
-    def __cube__(self):
+    def cube(self):
 
         n = self.num
         return n*n*n

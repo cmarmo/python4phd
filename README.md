@@ -24,7 +24,7 @@ Lunch Break
   
 ### Day 2 : 18 / 01 / 2019
 
-  - Collaborative coding on a proposed use case
+  - Collaborative coding on use cases
 
-  - Personal use case?
+  - Implementation of a GEOPS group on gitlab.u-psud.fr?
   

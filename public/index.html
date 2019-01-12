@@ -51,7 +51,7 @@
                                     <span class="fragment">
                                     Reproducibility, traceability <br />
                                     A versioning system is the key for efficient
-                                    <a href="https://gitlab.u-psud.fr/chiara.marmo/python4phd/wikis/FAIR-Data-Workflows">data analysis workflows</a>.
+                                    <a href="https://gitlab.u-psud.fr/chiara.marmo/python4phd/wikis/FAIR-Data-Workflows" target="_blank">data analysis workflows</a>.
                                     </span>
                                 </section>
 				<section data-transition="fade" id="gitwf">
@@ -116,7 +116,48 @@ $ git diff
 $ git status
 On branch master
 nothing to commit, working tree clean
-$
+$ git branch newbranch
+$ git status
+On branch master
+nothing to commit, working tree clean
+$ git checkout newbranch
+Switched to branch 'newbranch'
+$ echo "one more line" >> myfile.txt
+$ git status
+On branch newbranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   myfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git commit -a -m "My first branch"
+[newbranch df5ca76] My first branch
+ 1 file changed, 1 insertion(+)
+$ git status
+On branch newbranch
+nothing to commit, working tree clean
+$ git diff master
+diff --git a/myfile.txt b/myfile.txt
+index 8cba552..e89a111 100644
+--- a/myfile.txt
++++ b/myfile.txt
+@@ -1 +1,2 @@
+ my amazing file
++one more line
+$ git checkout master
+Switched to branch 'master'
+[cmarmo@localhost my-amazing-project]$ git status
+On branch master
+nothing to commit, working tree clean
+$ git checkout -b branchagain
+Switched to a new branch 'branchagain'
+[cmarmo@localhost my-amazing-project]$ git status
+On branch branchagain
+nothing to commit, working tree clean
+$ git checkout master
+Switched to branch 'master'
 </code></pre>
                                   <a href="https://learngitbranching.js.org/?NODEMO" target="_blank">learning git branching</a>
                                 </section>
@@ -144,6 +185,7 @@ $
                                 <a href="https://gitlab.u-psud.fr" target="_blank">Paris Sud GitLab portal</a> for practice.
                                 <br />
                                 <a href="https://gitlab.in2p3.fr" target="_blank">CCIN2P3 GitLab portal</a> for French collaborations.
+                                    <br /><br /><h4>Let's try!!</h4>
                                 </span>
                                 </section>
                                 <section>

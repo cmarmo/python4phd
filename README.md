@@ -27,4 +27,6 @@ Lunch Break
   - Collaborative coding on use cases
 
   - Implementation of a GEOPS group on gitlab.u-psud.fr?
-  
+
+  - Cleaning the system
+

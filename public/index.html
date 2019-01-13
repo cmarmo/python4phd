@@ -126,8 +126,8 @@ $ echo "one more line" >> myfile.txt
 $ git status
 On branch newbranch
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+  (use "git add &#60;file&#62;..." to update what will be committed)
+  (use "git checkout -- &#60;file&#62;..." to discard changes in working directory)
 
 	modified:   myfile.txt
 
@@ -148,12 +148,12 @@ index 8cba552..e89a111 100644
 +one more line
 $ git checkout master
 Switched to branch 'master'
-[cmarmo@localhost my-amazing-project]$ git status
+$ git status
 On branch master
 nothing to commit, working tree clean
 $ git checkout -b branchagain
 Switched to a new branch 'branchagain'
-[cmarmo@localhost my-amazing-project]$ git status
+$ git status
 On branch branchagain
 nothing to commit, working tree clean
 $ git checkout master
@@ -458,10 +458,14 @@ $ pip install -r pipinconda.txt</code></pre>
                                 </section>
 				<section data-transition="fade" id="coding">
 				    <section data-transition="fade" id="script">
-
-                                    </section>
-				    <section data-transition="fade" id="objor">
-
+                                        <h3>A coding workflow</h3>
+                                          <ul>
+                                              <li>Prototyping: python shell, jupyter-notebooks</li>
+                                              <li class="fragment fade-out">Scripting: see <a href="../src/example0.py">example0.py</a></li>
+                                              <li class="fragment fade-out">Creating a main function: see <a href="../src/example1.py">example1.py</a></li>
+                                              <li class="fragment">The object-oriented approach: see <a href="../src/example2.py">example2.py</a></li>
+                                              <li class="fragment">A modular structure: see <a href="../src/example3">example3</a></li>
+                                          </ul>
                                     </section>
 				    <section data-transition="fade" id="pep8">
                                         <h3><a href="https://www.python.org/dev/peps/pep-0008" target="_blank">Style Guide for Python Code</a></h3>

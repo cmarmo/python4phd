@@ -1,12 +1,10 @@
-Download a catalog from CDS using astroquery.sdss (from astropy)
-https://astroquery.readthedocs.io/en/latest/sdss/sdss.html#module-astroquery.sdss
+Download a catalog from CDS using astroquery.vizier (from astropy)
 
-recuperer catalog
+star galaxy separation using star probability field
 
-separer etoiles et galaxies avec un critere de forme
+Define a Class object and its subclasses Star and Galaxy (Inheritance)
 
-Calculer les histogrammes de couleur par tranche de magnitudes pour etoiles et galaxie.
-
-Verifier si les histogrammes changent en modifiant le parametre d'ellipticite
+Star: the color index must be computed
+Galaxy: plot ellipses and radius in the magnitude parameter space
 
 

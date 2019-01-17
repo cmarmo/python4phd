@@ -36,3 +36,6 @@ Lunch Break
 
   - Cleaning the system
 
+      - ```git push```
+      - Remove your directory
+

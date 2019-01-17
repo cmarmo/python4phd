@@ -1,5 +1,6 @@
 # notebooks checkpoints
 notebooks/.ipynb_checkpoints/
+TP/*/.ipynb_checkpoints/
 
 # test data
 notebooks/data/*test*
@@ -7,4 +8,7 @@ notebooks/data/*test*
 # compiled scripts
 src/*.pyc
 src/*/*.pyc
+
+# pycaches
+TP/*/__pycache__
 

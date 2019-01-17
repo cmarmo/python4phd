@@ -8,4 +8,6 @@
 
 - Galaxy: plot ellipses and radius in the magnitude parameter space
 
+- Compute the density of the stars , the density of the galaxies, the density of the objects
+
 

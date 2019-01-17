@@ -4,9 +4,9 @@
 
 - Define a SkyObject class and its subclasses Star and Galaxy (Inheritance)
 
-- Star: the color index must be computed, then different distributions plotted
+  - Star: the color index must be computed, then different distributions plotted
 
-- Galaxy: plot ellipses and radius in the magnitude parameter space
+  - Galaxy: plot ellipses and radius in the magnitude parameter space
 
 - Compute the density of the stars , the density of the galaxies, the density of the objects
 

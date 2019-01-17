@@ -3,7 +3,9 @@ from astropy import coordinates as coords
 import pandas as pd
 from matplotlib import pyplot as pl
 
-from skyobjects import SkyObject
+from skyobjects import SkyObject, Star, Galaxy
+import starproc
+import galaxyproc
 
 def main():
 
@@ -11,24 +13,28 @@ def main():
     print({k:v.description for k,v in catalog_list.items()})
 
     co = coords.SkyCoord('0h8m05.63s +14d50m23.3s')
-    Vizier.ROW_LIMIT = 1000
-    v = Vizier(columns=['RA_ICRS','DE_ICRS','gmag','e_gmag','rmag','e_rmag','rdVrad','rdVell','rPA','rs','gs'],
+    v = Vizier(columns=['RA_ICRS','DE_ICRS','gmag','e_gmag','rmag',
+                        'e_rmag','rdVrad','rdVell','rPA','rs','gs'],
                catalog='V/147')
+    v.ROW_LIMIT = -1
     result = v.query_region(co, radius='0.1deg', catalog='V/147')
     result_df = result['V/147/sdss12'].to_pandas()
-    #print(result_df.columns)
 
     star_cat = []
     galaxy_cat = []
 
     for i in range(0,len(result_df)):
-        myObject = SkyObject(result_df[i])
+        row = result_df.loc[i]
+        myObject = SkyObject(row)
         if (myObject.isaStar()):
-            star_cat.append(myObject)
-        if (myOject.isaGalaxy()):
-            galaxy_cat.append(myObject)
+            myStar = Star(row)
+            star_cat.append(myStar)
+        if (myObject.isaGalaxy()):
+            myGalaxy = Galaxy(row)
+            galaxy_cat.append(myGalaxy)
 
-    print(type(galaxy_cat))
+    starproc.main(star_cat)
+    galaxyproc.main(galaxy_cat)
 
 if __name__ == "__main__":
     main()

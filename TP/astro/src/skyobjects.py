@@ -16,7 +16,7 @@ class SkyObject:
 class Star(SkyObject):
 
     def __init__(self,row):
-        SkyObject.__init__(row)
+        super().__init__(row)
         self.gmag = row.gmag
         self.egmag = row.e_gmag
         self.color = self.gmag - self.mag
@@ -24,7 +24,7 @@ class Star(SkyObject):
 class Galaxy(SkyObject):
 
     def __init__(self,row):
-        SkyObject.__init__(row)
+        super().__init__(row)
         self.dVrad = row.rdVrad
         self.dVell = row.rdVell
         self.PA = row.rPA

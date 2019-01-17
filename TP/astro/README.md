@@ -6,8 +6,4 @@
 
   - Star: the color index must be computed, then different distributions plotted (g magnitude, r magnitude, color)
 
-  - Galaxy: plot ellipses and radius in the RA Dec space (https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html) 
-
-- (Compute the density of the stars , the density of the galaxies, the density of the objects (using scikit-learn))
-
-
+  - Galaxy: plot ellipses and radius in the RA Dec space (https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html)

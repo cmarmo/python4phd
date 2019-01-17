@@ -26,6 +26,12 @@ Lunch Break
 
   - Collaborative coding on use cases
 
+      - Clone your fork from gitlab
+      - Define upstream remote (check origin remote)
+      - ```git config``` on the local repo
+      - ```git fetch upstream```
+      - ```git merge upstream/master```
+
   - Implementation of a GEOPS group on gitlab.u-psud.fr?
 
   - Cleaning the system

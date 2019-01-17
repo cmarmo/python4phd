@@ -5,3 +5,5 @@ def SkyObject(row):
         self.dec = row.DE_ICRS
         self.mag = row.rmag
         self.emag = row.e_rmag
+
+
